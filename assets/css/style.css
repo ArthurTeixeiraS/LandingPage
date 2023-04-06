@@ -9,11 +9,13 @@
 }
 html{
     font-size:62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 
 
 }
@@ -25,7 +27,10 @@ h1{
   text-transform: uppercase;
 }
 h2{
-  font-size: 5.5rem;  
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2; 
 }
 h3{
   font-size: 5rem;  
@@ -41,6 +46,9 @@ h5{
 h6{
   font-size: 3.5rem;  
   
+}
+p{
+  margin-bottom: 3rem;
 }
 .main-bg{
   background-image: url('../img/main-bg.svg');
@@ -66,6 +74,7 @@ h6{
   right: 0;
   width: 100%;
   border-bottom: 0.1rem solid var(--light-gray-color);
+  z-index: 1;
 }
 .menu-content{
   display: flex;
@@ -110,10 +119,31 @@ h6{
   height: 6rem;
 }
 .intro-content{
+  position: relative;
+  top: -5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: stretch;
   gap: var(--gap);
-  
-
+  height: 100vh;
 }
+.intro-text-content, .intro-img{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  
+}
+.intro-img img{
+  max-width: 100%;
+  height: auto;
+}
+.top3-content{
+  max-width: 64rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
 
