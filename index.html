@@ -14,11 +14,13 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" role="button" aria-label="Close Menu">
+    <label for="close-menu" class="close-menu-label" title="Close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#home">Logo</a></h1>
+            <h1 onclick="getElementById('close-menu').checked=false;"><a href="#home">Logo</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked=false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#grid-one">Grid</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -194,7 +196,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>Testing/td>
+                            <td>Testing</td>
                         </tr>
                     </tfoot>
                 </table>
@@ -247,6 +249,10 @@
                 </fieldset>
         </div>
     </section>
+    <footer id="footer" class="footer white-bg">
+        <p>Feito com <span class="heart">❤</span> por <a rel="nofollow" target="_blank" href="https://www.instagram.com/arthurtx_/">Arthur</a> </p>
+    </footer>
+    <a class="back-to-top" href="#home">⮙</a>
 </body>
 
 </html>
